@@ -1,0 +1,9 @@
+name: pluginName
+version: ${project.version}
+main: my.app.Main
+api-version: 1.15
+# depend: [Vault]
+
+commands:
+  test:
+    description: test plugin command

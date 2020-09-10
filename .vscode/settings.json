@@ -1,0 +1,27 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "runOnSave.statusMessageTimeout": 3000,
+    "runOnSave.commands": [
+        {
+            "match": ".*",
+            "command": "mvn package && rm -rf ~/Desktop/minecraft/plugins/pluginName-1.0.0-shaded.jar && cp ./target/pluginName-1.0.0-shaded.jar ~/Desktop/minecraft/plugins/",
+            "runIn": "terminal",
+            "runningStatusMessage": "Compiling ${fileBasename}",
+            "finishStatusMessage": "${fileBasename} compiled"
+        }
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.formatOnSave": true,
+    "editor.wordWrapColumn": 140,
+    "explorer.compactFolders": false,
+    "editor.rulers": [
+        80,
+        120,
+        160
+    ]
+}
